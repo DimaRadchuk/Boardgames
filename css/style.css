@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #c3d8f7;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* background img */
+body {
+    min-width: 600px;
+    width: auto;
+    background-image: url('../image/piloty-sky-team.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+/* header */
+header {
+    margin: 0.5em auto 0 auto;
+    top: 0;
+    width: 30em;
+    background-color: #3d7be0;
+    background: linear-gradient(180deg, #3d7be0 0%, #edbb5d6b 50%, #3d7be0 100%);
+    border-radius: 0.5em;
+}
+
+.header_container {
+    text-align: center;
+}
+
+/* player and faction table */
+
+.players_rating_container {
+    padding: 0 1em 0 1em;
+    border-radius: 3%;
+}
+
+.faction_rating_container {
+    padding: 0 1em 5em 1em;
+    border-radius: 3%;
+}
+
+.players_rating_title,
+.faction_rating_title {
+    width: 10em;
+    border-radius: 0.25em;
+    text-align: center;
+    background-color: #3d7be0;
+}
+
+.players_rating_title {
+    margin: 0.25em auto auto auto;
+}
+
+.faction_rating_title {
+    margin: 1.5em auto auto auto;
+}
+
+.players_rating_table,
+.faction_rating_table {
+    background-color: #3d7be0;
+    border: 0.1em solid #000000;
+    border-collapse: collapse;
+    margin: auto;
+    width: 35em;
+}
+
+.players_rating_table th,
+.faction_rating_table th {
+    background-color: #1c4685;
+}
+
+.players_rating_table th:hover,
+.faction_rating_table th:hover {
+    cursor: pointer;
+}
+
+.players_rating_table th,
+.players_rating_table td,
+.faction_rating_table th,
+.faction_rating_table td {
+    padding: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.1em solid #000000;
+}
+
+.players_rating_table_tbody tr:hover {
+    background-color: #1c4685;
+}
+
+/* game list */
+.game_list_container {
+    margin: 2em 0 0 0;
+    height: 23em;
+    width: 100%;
+    background-color: #3d7be0;
+    background: linear-gradient(180deg, #3d7be0 0%, #eebb5d6b 50%, #3d7be0 100%);
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.game_list_container span {
+    top: 0em;
+    margin: 1em 3em 1em 1em;
+    width: auto;
+    display: inline-block;
+    position: static;
+}
+
+.game_list_container h3 {
+    margin: 0.5em 0 0 0;
+}
+
+.game_list_container h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.game_list_container table {
+    background-color: #3d7be0;
+    border: 0.1em solid #000000;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.game_list_container th {
+    background-color: #1c4685;
+}
+
+.game_list_container th,
+.game_list_container td {
+    padding: 0.7em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.1em solid #000000;
+}
+
+.game_list_win {
+    background-color: #3d7be0;
+}
+
+.game_list_container::-webkit-scrollbar {
+    display: contents;
+    height: 1.5em;
+}
+
+.game_list_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #615e59;
+    border-radius: 0.4em;
+}
+
+.game_list_container::-webkit-scrollbar-thumb {
+    background: #8d3613c2;
+    border-radius: 0.4em;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-content: end;
+    background-color: #3d7be0;
+    background-size: cover;
+}
+
+.creator_title {
+    text-align: right;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* .footer_url {
+    margin: 5em 5em 0.5em 0.5em;
+} */
+
+.footer_url_container {
+    float: left;
+    margin: 0.3em 0.3em 0em 1em;
+}
+
+.creator_title_containet {
+    float: right;
+    margin: 0.3em 3em 0em 0.3em;
+}
+
+.footer_url_telegram {
+    width: 2.5em;
+    height: 2.5em;
+
+}
+
+.footer_url_instagram {
+    margin: 0 0 0 1em;
+    width: 2.5em;
+    height: 2.5em;
+}
