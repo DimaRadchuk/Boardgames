@@ -16,7 +16,7 @@ function getCountWinGamePlayer(name, obj, selectedSeason) {
   let gameWinCount = 0;
   obj.forEach((item) => {
     item.players.forEach((player) => {
-      if (player.player == name && player.points == 1) {
+      if (player.player == name && item.result == "Перемога") {
         gameWinCount++;
       }
     });
@@ -175,6 +175,7 @@ function getWinRatingFaction(faction, obj) {
 // game list --------------------------------------------------------
 
 function createTableListGame(obj) {
+  const myImage = new Image(100, 200);
   obj.reverse().forEach(function (item) {
     const dateSpanGame = document.createElement("span");
     dateSpanGame.className = "game_list_block";
@@ -195,7 +196,7 @@ function createTableListGame(obj) {
     ];
     dateTheadTh[0].textContent = "Гравці";
     dateTheadTh[1].textContent = "Роль";
-    dateTheadTh[2].textContent = "Переможець";
+    dateTheadTh[2].textContent = "Результат";
 
     // Add thed for table
     dateTheadTh.forEach(function (cell) {
@@ -215,12 +216,16 @@ function createTableListGame(obj) {
       ];
       dataGameCell[0].textContent = player.player;
       dataGameCell[1].textContent = player.pilot;
-      dataGameCell[2].textContent = player.points;
+      if(item.result == "Перемога") {
 
-      if (player.points == 1) {
-        dateGameRow.className = "game_list_win";
+        // myImage.src = "image/succeeded.png"
+        dataGameCell[2].textContent = "Перемога";
       }
-
+      else {
+        // myImage.src = "image/fall.png"
+        dataGameCell[2].textContent = "Поразка";
+      }
+      
       dataGameCell.forEach(function (cell) {
         dateGameRow.appendChild(cell);
       });
@@ -231,6 +236,10 @@ function createTableListGame(obj) {
     const dateGameDesc = document.createElement("h3");
     dateGameDesc.textContent = item.airport;
     dateSpanGame.appendChild(dateGameDesc);
+    if (item.complexity == "Зелений") {
+    }
+
+
     DOM.gameListAll.appendChild(dateSpanGame);
   });
 
