@@ -13,19 +13,21 @@
 body {
     min-width: 600px;
     width: auto;
-    background-image: url('../image/sky_team.png');
+    background-image: url('../image/boardgames.jpg');
+    background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
+    background-blend-mode: multiply;
 }
 
 /* header */
 header {
     margin: 0.5em auto 0 auto;
     top: 0;
-    width: 8em;
-    background: rgba(28, 70, 133, 0.8);
+    width: 15em;
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
     border-radius: 0.5em;
     font-size: 1.5em;
@@ -33,6 +35,35 @@ header {
 
 .header_container {
     text-align: center;
+}
+
+/* games block */
+
+.games_container {
+    margin: 0.5em 7em 0 7em;
+}
+
+.games_container a{
+    display: inline-block;
+    position: static;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    margin: 0.5em auto 0 auto;
+    width: 15em;
+    height: 15em;
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+    border-radius: 0.5em;
+}
+
+.games_container a:hover {
+    box-shadow: 0em 0em 2em 2em rgba(0, 0, 0, 0.8);
+}
+
+.games_container img {
+    width: 15em;
+    height: 15em;
+    border-radius: 0.5em;
 }
 
 /* player and faction table */
@@ -52,7 +83,7 @@ header {
     width: 10em;
     border-radius: 0.25em;
     text-align: center;
-    background: rgba(28, 70, 133, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
 }
 
@@ -66,7 +97,7 @@ header {
 
 .players_rating_table,
 .faction_rating_table {
-    background: rgba(61, 123, 224, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
     border: 0.1em solid #000000;
     border-collapse: collapse;
@@ -76,7 +107,7 @@ header {
 
 .players_rating_table th,
 .faction_rating_table th {
-    background: rgba(28, 70, 133);
+    background: rgba(0, 0, 0,);
 }
 
 .players_rating_table th:hover,
@@ -103,7 +134,7 @@ header {
     margin: 2em 0 0 0;
     height: 16em;
     width: 100%;
-    background: rgba(0, 11, 46, 0.95);
+    background: rgba(0, 0, 0, 0.95);
     overflow: auto;
     white-space: nowrap;
     display: flex;
@@ -147,7 +178,7 @@ header {
     font-weight: bold;
     text-align: center;
     border-bottom: 0.1em solid #000000;
-    background: rgba(61, 123, 224);
+    background: rgba(0, 0, 0,);
 }
 
 .game_list_win {
@@ -165,7 +196,7 @@ header {
 }
 
 .game_list_container::-webkit-scrollbar-thumb {
-    background: rgba(61, 123, 224, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 0.4em;
 }
 
@@ -175,7 +206,7 @@ footer {
     bottom: 0;
     width: 100%;
     align-content: end;
-    background: rgba(61, 123, 224, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     background-size: cover;
 }
 

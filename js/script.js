@@ -78,7 +78,7 @@ function createTableRatingPlayers(obj) {
   });
 }
 
-const tbodyPlayersRating = createTableRatingPlayers(gameDate);
+const tbodyPlayersRating = createTableRatingPlayers(gameDatePilots);
 // ----------------------------------------------------------------------------
 // math function
 
@@ -170,7 +170,7 @@ function getWinRatingFaction(faction, obj) {
 //   });
 // }
 
-// const tbodyFactionRatingRow = createTableRatingFactionRow(gameDate);
+// const tbodyFactionRatingRow = createTableRatingFactionRow(gameDatePilots);
 
 // game list --------------------------------------------------------
 
@@ -245,7 +245,7 @@ function createTableListGame(obj) {
 
 }
 
-const tableGameList = createTableListGame(gameDate);
+const tableGameList = createTableListGame(gameDatePilots);
 
 // onload = "sortTablePlayers(1); sortTablePlayers(3); sortTableFaction(3)";
 
@@ -266,9 +266,9 @@ $("select[id=season]").on("change", function () {
     item.remove();
   });
 
-  let tbodyPlayersRatingUpdate = createTableRatingPlayers(gameDate);
-  let tbodyFactionRatingRowUpdate = createTableRatingFactionRow(gameDate);
-  let tableGameListUpdate = createTableListGame(gameDate);
+  let tbodyPlayersRatingUpdate = createTableRatingPlayers(gameDatePilots);
+  let tbodyFactionRatingRowUpdate = createTableRatingFactionRow(gameDatePilots);
+  let tableGameListUpdate = createTableListGame(gameDatePilots);
 
   sortTablePlayers(2);
   sortTablePlayers(3);
