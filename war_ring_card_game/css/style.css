@@ -1,0 +1,86 @@
+/* background img */
+body {
+    background-image: url('../image/war_ring_card_game.webp');
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* header */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+/* player and faction table */
+
+.players_rating_title,
+.faction_rating_title {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+.players_rating_table,
+.faction_rating_table {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+    border: 0.1em solid #000000;
+}
+
+.players_rating_table th,
+.faction_rating_table th {
+    background: rgba(0, 0, 0, 1);
+}
+
+.players_rating_table th,
+.players_rating_table td,
+.faction_rating_table th,
+.faction_rating_table td {
+    padding: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.1em solid #000000;
+}
+
+.players_rating_table_tbody tr:hover {
+    background: rgba(0, 0, 0)
+}
+
+.faction_free_peoples {
+    background: linear-gradient(90deg, #0a3a6e 0%, #ffffff00 100%);
+}
+
+.faction_shadow {
+    background: linear-gradient(90deg, #610b18 0%, #ffffff00 100%);
+}
+
+/* game list */
+.game_list_container {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.game_list_container table {
+    border: 0.1em solid #000000;
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+.game_list_container th {
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 0.1em solid #000000;
+}
+
+.game_list_container td {
+    border-bottom: 0.1em solid #000000;
+    background: rgba(2, 2, 2, 0.8);
+}
+
+.game_list_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #615e59;
+}
+
+.game_list_container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+}
