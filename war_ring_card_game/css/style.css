@@ -45,11 +45,15 @@ header {
 }
 
 .faction_free_peoples {
-    background: linear-gradient(90deg, #0a3a6e 0%, #ffffff00 100%);
+    background: linear-gradient(90deg, #0a3a6e -30%, #ffffff00 100%);
 }
 
 .faction_shadow {
-    background: linear-gradient(90deg, #610b18 0%, #ffffff00 100%);
+    background: linear-gradient(90deg, #610b18 -30%, #ffffff00 100%);
+}
+
+.player_win {
+    color: #e3b542;
 }
 
 /* game list */
@@ -69,7 +73,7 @@ header {
 
 .game_list_container td {
     border-bottom: 0.1em solid #000000;
-    background: rgba(2, 2, 2, 0.8);
+/*    background: rgba(2, 2, 2, 0.8);*/
 }
 
 .game_list_container::-webkit-scrollbar-track {

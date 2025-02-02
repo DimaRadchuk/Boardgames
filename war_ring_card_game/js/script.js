@@ -200,8 +200,16 @@ function createTableListGame(obj) {
       ];
       dataGameCell[0].textContent = player.player;
       dataGameCell[1].textContent = player.faction;
+      if (player.faction == "Вільні народи") {
+        dateGameRow.className += "faction_free_peoples";
+      }
+      else {
+        dateGameRow.className += "faction_shadow";
+      }
+
       if(player.point == 1) {
         dataGameCell[2].textContent = "Перемога";
+        dataGameCell[2].className += "player_win";
       }
       else {
         dataGameCell[2].textContent = "Поразка";
