@@ -61,6 +61,36 @@ const gameDatePilots = [
       { player: "Радчук Д.", pilot: "Другий пілот"},
     ],
   },
+  {
+    date: "17-02-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Програш",
+    players: [
+      { player: "Радчук О.", pilot: "Перший пілот"},
+      { player: "Радчук Д.", pilot: "Другий пілот"},
+    ],
+  },
+    {
+    date: "17-02-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Програш",
+    players: [
+      { player: "Радчук О.", pilot: "Перший пілот"},
+      { player: "Радчук Д.", pilot: "Другий пілот"},
+    ],
+  },
+    {
+    date: "17-02-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Програш",
+    players: [
+      { player: "Радчук О.", pilot: "Перший пілот"},
+      { player: "Радчук Д.", pilot: "Другий пілот"},
+    ],
+  },
 ];
 
 const gameDateWarRingCardGame = [
@@ -87,5 +117,13 @@ const gameDateWarRingCardGame = [
       { player: "Радчук О.", faction: "Тінь", point: 1},
     ],
     description: "20 - 20",
+  },
+  {
+    date: "16-02-2025",
+    players: [
+      { player: "Радчук Д.", faction: "Тінь", point: 1},
+      { player: "Радчук О.", faction: "Вільні народи", point: 0},
+    ],
+    description: "20 - 17",
   },
 ];
