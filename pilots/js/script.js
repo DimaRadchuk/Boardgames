@@ -203,10 +203,23 @@ function createTableListGame(obj) {
       dateThead.appendChild(cell);
     });
 
+    if (item.complexity == "Зелений") {
+      dataTable.className += "complexity_green";
+    }
+    else if (item.complexity == "Жовтий") {
+      dataTable.className += "complexity_yellow";
+    }
+    else if (item.complexity == "Червоний") {
+      dataTable.className += "complexity_red";
+    }
+    else if (item.complexity == "Чорний") {
+      dataTable.className += "complexity_black";
+    }
+
     dataTable.appendChild(dateThead);
 
     const dateTbody = document.createElement("tbody");
-
+   
     item.players.forEach(function (player) {
       const dateGameRow = document.createElement("tr");
       let dataGameCell = [
@@ -217,15 +230,16 @@ function createTableListGame(obj) {
       dataGameCell[0].textContent = player.player;
       dataGameCell[1].textContent = player.pilot;
       if(item.result == "Перемога") {
-
         // myImage.src = "image/succeeded.png"
         dataGameCell[2].textContent = "Перемога";
+        dataGameCell[2].className += "game_win";
       }
       else {
         // myImage.src = "image/fall.png"
         dataGameCell[2].textContent = "Поразка";
+        dataGameCell[2].className += "game_lose";
       }
-      
+
       dataGameCell.forEach(function (cell) {
         dateGameRow.appendChild(cell);
       });

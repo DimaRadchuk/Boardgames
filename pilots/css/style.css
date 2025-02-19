@@ -44,9 +44,44 @@ header {
     background-color: #1c4685;
 }
 
+/* pilots */
+
+.complexity_green th {
+    background: rgba(69, 132, 27, 1) !important;
+}
+
+.complexity_green td {
+    background: rgba(76, 150, 27, 0.6) !important;
+}
+
+.complexity_yellow th {
+    background: rgba(156, 131, 20, 1) !important;
+}
+
+.complexity_yellow td {
+    background: rgba(213, 187, 55, 0.6) !important;
+}
+
+/*.complexity_red {
+    background: linear-gradient(90deg, #610b18 -30%, #ffffff00 100%);
+}
+
+.complexity_black {
+    background: linear-gradient(90deg, #610b18 -30%, #ffffff00 100%);
+}
+*/
+
+.game_win {
+    color: #1c2c8c;
+}
+
+.game_lose {
+    color: #e08355;
+}
+
 /* game list */
 .game_list_container {
-    background: rgba(0, 11, 46, 0.95);
+    background: rgba(0, 11, 46, 0.7);
 }
 
 .game_list_container table {

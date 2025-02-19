@@ -44,6 +44,8 @@ header {
     background: rgba(0, 0, 0)
 }
 
+/* war of the ring: card game */
+
 .faction_free_peoples {
     background: linear-gradient(90deg, #0a3a6e -30%, #ffffff00 100%);
 }
