@@ -7,8 +7,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Поразка",
     players: [
-      { player: "Радчук Д.", pilot: "Перший пілот"},
-      { player: "Радчук О.", pilot: "Другий пілот"},
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
     ],
   },
   {
@@ -17,8 +17,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Перемога",
     players: [
-      { player: "Радчук Д.", pilot: "Перший пілот"},
-      { player: "Радчук О.", pilot: "Другий пілот"},
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
     ],
   },
   {
@@ -27,8 +27,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Перемога",
     players: [
-      { player: "Радчук Д.", pilot: "Перший пілот"},
-      { player: "Радчук О.", pilot: "Другий пілот"},
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
     ],
   },
   {
@@ -37,8 +37,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Перемога",
     players: [
-      { player: "Радчук О.", pilot: "Перший пілот"},
-      { player: "Радчук Д.", pilot: "Другий пілот"},
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
   {
@@ -47,8 +47,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Перемога",
     players: [
-      { player: "Радчук О.", pilot: "Перший пілот"},
-      { player: "Радчук Д.", pilot: "Другий пілот"},
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
   {
@@ -57,8 +57,8 @@ const gameDatePilots = [
     complexity: "Жовтий",
     result: "Перемога",
     players: [
-      { player: "Радчук О.", pilot: "Перший пілот"},
-      { player: "Радчук Д.", pilot: "Другий пілот"},
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
   {
@@ -67,8 +67,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Програш",
     players: [
-      { player: "Радчук О.", pilot: "Перший пілот"},
-      { player: "Радчук Д.", pilot: "Другий пілот"},
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
     {
@@ -77,8 +77,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Програш",
     players: [
-      { player: "Радчук О.", pilot: "Перший пілот"},
-      { player: "Радчук Д.", pilot: "Другий пілот"},
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
     {
@@ -87,8 +87,8 @@ const gameDatePilots = [
     complexity: "Зелений",
     result: "Програш",
     players: [
-      { player: "Радчук О.", pilot: "Перший пілот"},
-      { player: "Радчук Д.", pilot: "Другий пілот"},
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
 ];
