@@ -11,8 +11,6 @@
 
 /* background img */
 body {
-    min-width: 600px;
-    width: auto;
     background-image: url('../image/boardgames.jpg');
     background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
@@ -40,16 +38,13 @@ header {
 /* games block */
 
 .games_container {
-    margin: 0.5em 7em 0 7em;
+    text-align:center;
 }
 
-.games_container a{
+.games_container a {
     display: inline-block;
-    position: static;
-    text-align: center;
-    vertical-align: middle;
     font-size: 1em;
-    margin: 0.5em auto 0 auto;
+    margin: 0.5em 0.2em 0 auto;
     width: 15em;
     height: 15em;
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
@@ -102,7 +97,7 @@ header {
     border: 0.1em solid #000000;
     border-collapse: collapse;
     margin: auto;
-    width: 35em;
+    width: 30em;
 }
 
 .players_rating_table th,

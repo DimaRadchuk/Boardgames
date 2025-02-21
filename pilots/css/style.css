@@ -6,7 +6,7 @@
 /* background img */
 body {
     background-image: url('../image/sky_team.png');
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
     
 }
 

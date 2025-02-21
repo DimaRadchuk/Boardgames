@@ -93,6 +93,8 @@ const gameDatePilots = [
   },
 ];
 
+// Пілоти
+
 const gameDateWarRingCardGame = [
   {
     date: "05-01-2025",
@@ -125,5 +127,23 @@ const gameDateWarRingCardGame = [
       { player: "Радчук О.", faction: "Вільні народи", point: 0},
     ],
     description: "20 - 17",
+  },
+];
+
+const gameTurbo = [
+  {
+    date: "26-01-2025",
+    track: "США",
+    expansions: [
+      { expansion: "гараж"}, 
+      { expansion: "погода"},
+    ],
+    players: [
+      { player: "Тупало В.", position: 1, point: 9},
+      { player: "Радчук Д.", position: 2, point: 6},
+      { player: "Ваврисюк І.", position: 3, point: 4},
+      { player: "Дзих. В.", position: 4, point: 3},
+      { player: "Жилич В.", position: 5, point: 2},
+    ],
   },
 ];

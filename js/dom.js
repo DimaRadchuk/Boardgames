@@ -8,4 +8,9 @@ const DOM = {
   wrcgFactionRating: document.getElementById("factionRating"),
   wrcgFactionRatingRow: document.getElementById("factionRating"),
   wrcgGameListAll: document.getElementById("gameList"),
+
+  turboPlayerRating: document.getElementById("playerRating"),
+  turboFactionRating: document.getElementById("factionRating"),
+  turboFactionRatingRow: document.getElementById("factionRating"),
+  turboGameListAll: document.getElementById("gameList"),
 };

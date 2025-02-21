@@ -1,0 +1,82 @@
+* {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* background img */
+body {
+    background-image: url('../image/turbo.jpg');
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+/* header */
+header {
+    background: rgba(246, 169, 58, 0.8);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+/* player and faction table */
+
+.players_rating_title,
+.faction_rating_title {
+    background: rgba(246, 169, 58, 0.8);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+.players_rating_table,
+.faction_rating_table {
+    background: rgba(246, 169, 58, 0.7);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+    border: 0.1em solid #000000;
+}
+
+.players_rating_table th,
+.faction_rating_table th {
+    background: rgba(246, 169, 58, 1);
+}
+
+.players_rating_table th,
+.players_rating_table td,
+.faction_rating_table th,
+.faction_rating_table td {
+    padding: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.1em solid #000000;
+}
+
+.players_rating_table_tbody tr:hover {
+    background: rgba(246, 169, 58, 1);
+}
+
+
+/* game list */
+.game_list_container {
+    background: rgba(246, 169, 58, 0.5);
+    height: 22em;
+}
+
+.game_list_container th {
+    background: rgba(246, 169, 58, 0.8);
+}
+
+.game_list_container tr {
+    background: rgba(255, 202, 125, 0.8);
+}
+
+.game_list_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #615e59;
+}
+
+.game_list_container::-webkit-scrollbar-thumb {
+    background: rgba(246, 169, 58, 0.8);
+}
+
+/* turbo */
+
+
+/* footer */
+footer {
+    background: rgba(246, 169, 58, 0.8);
+}
