@@ -18,6 +18,7 @@ body {
     background-position: top;
     background-size: cover;
     background-blend-mode: multiply;
+    min-width: 501px;
 }
 
 /* header */
@@ -64,12 +65,11 @@ header {
 /* player and faction table */
 
 .players_rating_container {
-    padding: 0 1em 0 1em;
     border-radius: 3%;
 }
 
 .faction_rating_container {
-    padding: 0 1em 5em 1em;
+    padding: 0 0 5em 0;
     border-radius: 3%;
 }
 
