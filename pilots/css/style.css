@@ -94,10 +94,11 @@ header {
 
 .game_win {
   color: #1c2c8c;
+
 }
 
 .game_lose {
-    background-image: url('image/fall.png');
+    background-image: src('image/fall.png');
     color: #e08355;
 }
 
