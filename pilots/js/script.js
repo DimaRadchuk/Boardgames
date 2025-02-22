@@ -228,15 +228,21 @@ function createTableListGame(obj) {
         document.createElement("td"),
       ];
       dataGameCell[0].textContent = player.player;
-      dataGameCell[1].textContent = player.pilot;
+      if(player.pilot == "1-й пілот") {
+        // myImage.src = "image/succeeded.png"
+        dataGameCell[1].className += "first_pilot";
+      }
+      else {
+        // myImage.src = "image/fall.png"
+        dataGameCell[1].className += "second_pilot";
+      }
+      
       if(item.result == "Перемога") {
         // myImage.src = "image/succeeded.png"
-        dataGameCell[2].textContent = "Перемога";
         dataGameCell[2].className += "game_win";
       }
       else {
         // myImage.src = "image/fall.png"
-        dataGameCell[2].textContent = "Поразка";
         dataGameCell[2].className += "game_lose";
       }
 

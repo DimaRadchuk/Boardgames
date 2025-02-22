@@ -71,15 +71,15 @@ header {
 }
 /*(151, 189, 126, 1)*/
 
-.complexity_green td {
-    background: rgba(154, 200, 123, 0.7) !important;
+.complexity_green tr {
+    background: rgba(154, 200, 123, 0.7);
 }
 /*(154, 200, 123, 1)*/
 .complexity_yellow th {
     background: rgba(225, 209, 101, 1) !important;
 }
 /*(225, 209, 101, 1)*/
-.complexity_yellow td {
+.complexity_yellow tr {
     background: rgba(216, 192, 71, 0.7) !important;
 }
 
@@ -91,15 +91,32 @@ header {
     background: linear-gradient(90deg, #610b18 -30%, #ffffff00 100%);
 }
 */
+.first_pilot {
+    background-image: url('../image/first_pilot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+}
+
+.second_pilot {
+    background-image: url('../image/second_pilot.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+}
 
 .game_win {
-  color: #1c2c8c;
-
+    background-image: url('../image/succeeded.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5em;
 }
 
 .game_lose {
-    background-image: src('image/fall.png');
-    color: #e08355;
+    background-image: url('../image/fall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5em;
 }
 
 /* footer */

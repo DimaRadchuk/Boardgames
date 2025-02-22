@@ -213,7 +213,6 @@ function createTableListGame(obj) {
       }
       else {
         dataGameCell[2].textContent = "Поразка";
-        dataGameCell[2].className += "game_lose";
       }
       
       dataGameCell.forEach(function (cell) {
