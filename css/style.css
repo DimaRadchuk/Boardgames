@@ -126,7 +126,7 @@ header {
 
 /* game list */
 .game_list_container {
-    margin: 2em 0 0 0;
+    margin: 2em 0 5em 0;
     height: 16em;
     width: 100%;
     background: rgba(0, 0, 0, 0.95);
@@ -229,7 +229,6 @@ footer {
 .footer_url_telegram {
     width: 2.5em;
     height: 2.5em;
-
 }
 
 .footer_url_instagram {
