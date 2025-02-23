@@ -232,7 +232,7 @@ function createTableListGame(obj) {
           dataGameCell[1].className += "game_list_fifth_place";
           break;
         default:
-          console.log(`Sorry, we are out of ${expr}.`);
+          break;
       }
       dataGameCell[2].textContent = player.point;
 
@@ -243,25 +243,39 @@ function createTableListGame(obj) {
     });
     dataTable.appendChild(dateTbody);
     dateSpanGame.appendChild(dataTable);
-    const dateGameDesc = document.createElement("h3");
-    dateGameDesc.textContent = item.track;
-    dateSpanGame.appendChild(dateGameDesc);
+    
+
+
+    const dateGameDesc = document.createElement("div");
+    dateGameDesc.className += "game_list_expansions_container";
+    
+
+    const dateGameExpansionTrack = document.createElement("a");    
+    switch (item.track) {
+      case "США":
+        dateGameExpansionTrack.className += "game_list_track_usa";
+        break;
+        break;
+      default:
+        break;
+    }
+    dateGameDesc.appendChild(dateGameExpansionTrack);
+    
+
     item.expansions.forEach(function (expansion) {
       if (expansion.expansion == "погода") {
-        const dateGameExpansionWeather = document.createElement("span");
-        const dateGameExpansionWeatherItem = document.createElement("h3");
-        dateGameExpansionWeatherItem.className += "game_list_expansions_weather";
-        dateGameExpansionWeather.appendChild(dateGameExpansionWeatherItem);
+        const dateGameExpansionWeather = document.createElement("a");
+        dateGameExpansionWeather.className += "game_list_expansions_weather";
         dateGameDesc.appendChild(dateGameExpansionWeather);
       };
       if (expansion.expansion == "гараж") {
-        const dateGameExpansionGarage = document.createElement("span");
+        const dateGameExpansionGarage = document.createElement("a");
         dateGameExpansionGarage.className += "game_list_expansions_garage";
         dateGameDesc.appendChild(dateGameExpansionGarage);
       };   
     });
-    
 
+    dateSpanGame.appendChild(dateGameDesc);
     DOM.gameListAll.appendChild(dateSpanGame);
   });
 

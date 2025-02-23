@@ -54,7 +54,7 @@ header {
 /* game list */
 .game_list_container {
     background: rgba(246, 169, 58, 0.5);
-    height: 22em;
+    height: 24em;
 }
 
 .game_list_container th {
@@ -73,55 +73,74 @@ header {
     background: rgba(246, 169, 58, 0.8);
 }
 
-.game_list_first_place {
-    background-image: url('../image/medal_1.png');
+.game_list_container td {
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.game_list_first_place,
+.game_list_second_place,
+.game_list_third_place {
     background-size: 2.4em;
+}
+
+.game_list_fourth_place,
+.game_list_fifth_place {
+    background-size: 2em;
+}
+
+.game_list_first_place {
+    background-image: url('../image/medal_1.png');
 }
 
 .game_list_second_place {
     background-image: url('../image/medal_2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 2.4em;
 }
 
 .game_list_third_place {
     background-image: url('../image/medal_3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 2.4em;
 }
 
 .game_list_fourth_place {
     background-image: url('../image/medal_4.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 2em;
 }
 
 .game_list_fifth_place {
     background-image: url('../image/medal_5.png');
-    background-position: center;
+}
+
+.game_list_expansions_container {
+    text-align:left;
+}
+
+.game_list_expansions_container a {
+    display: inline-block;
+    background-position: left;
     background-repeat: no-repeat;
+    height: 3em;
+}
+
+.game_list_track_usa {
+    background-image: url('../image/usa.png');
+    background-position: left;
+    padding: 0 2em 0 0;
+    background-size: 3em;
+    width: 3em;
+}
+
+.game_list_expansions_weather,
+.game_list_expansions_garage{
+    margin: 0.5em 0.2em 0 auto;
     background-size: 2em;
+    width: 2em;
 }
 
 .game_list_expansions_weather {
     background-image: url('../image/weather.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 2em;
-    height: 2em;
 }
 
 .game_list_expansions_garage {
     background-image: url('../image/garage.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 2em;
-    height: 2em;
 }
 
 /* turbo */
