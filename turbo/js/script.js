@@ -215,7 +215,25 @@ function createTableListGame(obj) {
         document.createElement("td"),
       ];
       dataGameCell[0].textContent = player.player;
-      dataGameCell[1].textContent = player.position;
+      switch (player.position) {
+        case 1:
+          dataGameCell[1].className += "game_list_first_place";
+          break;
+        case 2:
+          dataGameCell[1].className += "game_list_second_place";
+          break;
+        case 3:
+          dataGameCell[1].className += "game_list_third_place";
+          break;
+        case 4:
+          dataGameCell[1].className += "game_list_fourth_place";
+          break;
+        case 5:
+          dataGameCell[1].className += "game_list_fifth_place";
+          break;
+        default:
+          console.log(`Sorry, we are out of ${expr}.`);
+      }
       dataGameCell[2].textContent = player.point;
 
       dataGameCell.forEach(function (cell) {
@@ -228,7 +246,21 @@ function createTableListGame(obj) {
     const dateGameDesc = document.createElement("h3");
     dateGameDesc.textContent = item.track;
     dateSpanGame.appendChild(dateGameDesc);
-
+    item.expansions.forEach(function (expansion) {
+      if (expansion.expansion == "погода") {
+        const dateGameExpansionWeather = document.createElement("span");
+        const dateGameExpansionWeatherItem = document.createElement("h3");
+        dateGameExpansionWeatherItem.className += "game_list_expansions_weather";
+        dateGameExpansionWeather.appendChild(dateGameExpansionWeatherItem);
+        dateGameDesc.appendChild(dateGameExpansionWeather);
+      };
+      if (expansion.expansion == "гараж") {
+        const dateGameExpansionGarage = document.createElement("span");
+        dateGameExpansionGarage.className += "game_list_expansions_garage";
+        dateGameDesc.appendChild(dateGameExpansionGarage);
+      };   
+    });
+    
 
     DOM.gameListAll.appendChild(dateSpanGame);
   });

@@ -73,6 +73,57 @@ header {
     background: rgba(246, 169, 58, 0.8);
 }
 
+.game_list_first_place {
+    background-image: url('../image/medal_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.4em;
+}
+
+.game_list_second_place {
+    background-image: url('../image/medal_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.4em;
+}
+
+.game_list_third_place {
+    background-image: url('../image/medal_3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.4em;
+}
+
+.game_list_fourth_place {
+    background-image: url('../image/medal_4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+.game_list_fifth_place {
+    background-image: url('../image/medal_5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+.game_list_expansions_weather {
+    background-image: url('../image/weather.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    height: 2em;
+}
+
+.game_list_expansions_garage {
+    background-image: url('../image/garage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    height: 2em;
+}
+
 /* turbo */
 
 

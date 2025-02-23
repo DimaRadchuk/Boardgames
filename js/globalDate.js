@@ -135,8 +135,8 @@ const gameTurbo = [
     date: "26-01-2025",
     track: "США",
     expansions: [
-      { expansion: "гараж"}, 
-      { expansion: "погода"},
+      { expansion: "погода"}, 
+      { expansion: "гараж"},
     ],
     players: [
       { player: "Тупало В.", position: 1, point: 9},
