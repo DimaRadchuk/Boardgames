@@ -134,18 +134,9 @@ function createTableRatingFactionRow(obj) {
     faction_name = document.getElementsByClassName("faction_rating_table_name")[
       i
     ].textContent;
-    dataCellFaction[0].textContent = getCountGameFaction(
-      faction_name,
-      obj
-    );
-    dataCellFaction[1].textContent = getCountWinGameFaction(
-      faction_name,
-      obj
-    );
-    dataCellFaction[2].textContent = getWinRatingFaction(
-      faction_name,
-      obj
-    );
+    dataCellFaction[0].textContent = getCountGameFaction(faction_name, obj);
+    dataCellFaction[1].textContent = getCountWinGameFaction(faction_name, obj);
+    dataCellFaction[2].textContent = getWinRatingFaction(faction_name, obj);
 
     dataCellFaction.forEach(function (child) {
       child.className = "faction_rating_row";
@@ -208,11 +199,10 @@ function createTableListGame(obj) {
       }
 
       if(player.point == 1) {
-        dataGameCell[2].textContent = "Перемога";
         dataGameCell[2].className += "player_win";
       }
       else {
-        dataGameCell[2].textContent = "Поразка";
+        dataGameCell[2].className += "player_lose"; 
       }
       
       dataGameCell.forEach(function (cell) {

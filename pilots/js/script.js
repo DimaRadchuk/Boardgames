@@ -1,6 +1,6 @@
 // math function
 
-function getCountGamePlayer(name, obj, selectedSeason) {
+function getCountGamePlayer(name, obj) {
   let gameCount = 0;
   obj.forEach((item) => {
     item.players.forEach((player) => {
@@ -12,7 +12,7 @@ function getCountGamePlayer(name, obj, selectedSeason) {
   return gameCount;
 }
 
-function getCountWinGamePlayer(name, obj, selectedSeason) {
+function getCountWinGamePlayer(name, obj) {
   let gameWinCount = 0;
   obj.forEach((item) => {
     item.players.forEach((player) => {
@@ -24,7 +24,7 @@ function getCountWinGamePlayer(name, obj, selectedSeason) {
   return gameWinCount;
 }
 
-function getWinRatingPlayers(player, obj, selectedSeason) {
+function getWinRatingPlayers(player, obj) {
   let gameRating = 0;
   let gameWinCount = getCountWinGamePlayer(player, obj);
   let gameCount = getCountGamePlayer(player, obj);
@@ -38,6 +38,28 @@ function getWinRatingPlayers(player, obj, selectedSeason) {
   }
 
   return gameRating;
+}
+
+function getPointRatingPlayer(name, obj) {
+  let gamePoint = 0;
+
+  obj.forEach((item) => {
+    item.players.forEach((player) => {
+      if (player.player == name && item.result == "Перемога" && item.complexity == "Зелений") {
+        gamePoint = gamePoint + 1;
+      } else if (player.player == name && item.result == "Перемога" && item.complexity == "Жовтий") {
+        gamePoint = gamePoint + 2;
+      }
+      if (player.player == name && item.result == "Поразка" && item.complexity == "Зелений") {
+        gamePoint = gamePoint - 1;
+      } else if (player.player == name && item.result == "Поразка" && item.complexity == "Жовтий") {
+        gamePoint = gamePoint - 2;
+      }
+
+    });
+  });
+
+  return gamePoint;
 }
 
 // players table--------------------------------------------------------
@@ -61,15 +83,14 @@ function createTableRatingPlayers(obj) {
       document.createElement("td"),
       document.createElement("td"),
       document.createElement("td"),
+      document.createElement("td"),
     ];
 
     dataCell[0].textContent = player;
     dataCell[1].textContent = getCountGamePlayer(player, obj);
-    dataCell[2].textContent = getCountWinGamePlayer(
-      player,
-      obj,
-    );
+    dataCell[2].textContent = getCountWinGamePlayer(player,obj,);
     dataCell[3].textContent = getWinRatingPlayers(player, obj);
+    dataCell[4].textContent = getPointRatingPlayer(player, obj);
 
     dataCell.forEach(function (cell) {
       dataRow.appendChild(cell);

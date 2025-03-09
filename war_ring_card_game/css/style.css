@@ -55,7 +55,17 @@ header {
 }
 
 .player_win {
-    color: #e3b542;
+    background-image: url('../image/the_ring.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+.player_lose {
+    background-image: url('../image/rip.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
 }
 
 /* game list */

@@ -65,7 +65,7 @@ const gameDatePilots = [
     date: "17-02-2025",
     airport: "Гульєльмо Марконі",
     complexity: "Зелений",
-    result: "Програш",
+    result: "Поразка",
     players: [
       { player: "Радчук О.", pilot: "1-й пілот"},
       { player: "Радчук Д.", pilot: "2-й пілот"},
@@ -75,20 +75,50 @@ const gameDatePilots = [
     date: "17-02-2025",
     airport: "Гульєльмо Марконі",
     complexity: "Зелений",
-    result: "Програш",
+    result: "Поразка",
     players: [
       { player: "Радчук О.", pilot: "1-й пілот"},
       { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
-    {
+  {
     date: "17-02-2025",
     airport: "Гульєльмо Марконі",
     complexity: "Зелений",
-    result: "Програш",
+    result: "Поразка",
     players: [
       { player: "Радчук О.", pilot: "1-й пілот"},
       { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "09-03-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Поразка",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "09-03-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Поразка",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "09-03-2025",
+    airport: "Тонконтін",
+    complexity: "Жовтий",
+    result: "Перемога",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
     ],
   },
 ];
