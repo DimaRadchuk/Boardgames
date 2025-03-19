@@ -121,9 +121,59 @@ const gameDatePilots = [
       { player: "Радчук О.", pilot: "2-й пілот"},
     ],
   },
+  {
+    date: "16-03-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Поразка",
+    players: [
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "16-03-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Поразка",
+    players: [
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "16-03-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Поразка",
+    players: [
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "16-03-2025",
+    airport: "Гульєльмо Марконі",
+    complexity: "Зелений",
+    result: "Перемога",
+    players: [
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "16-03-2025",
+    airport: "Ґалеан",
+    complexity: "Жовтий",
+    result: "Перемога",
+    players: [
+      { player: "Радчук О.", pilot: "1-й пілот"},
+      { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
 ];
 
-// Пілоти
+// Війна персня
 
 const gameDateWarRingCardGame = [
   {
