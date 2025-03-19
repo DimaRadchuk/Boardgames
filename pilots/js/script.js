@@ -62,6 +62,40 @@ function getPointRatingPlayer(name, obj) {
   return gamePoint;
 }
 
+function createTableRatingPlayer(player, obj) {
+  let airports = [];
+
+  obj.forEach((item) => {
+    if (airports.indexOf(item.airport) === -1) {
+      airports.push(item.airport);
+    }
+  });
+
+  // Create table data rows
+  airports.forEach(function (airport) {
+    const dataRow = document.createElement("tr");
+    dataRow.className = "player_rating_row";
+    let dataCell = [
+      document.createElement("td"),
+      document.createElement("td"),
+      document.createElement("td"),
+      document.createElement("td"),
+      document.createElement("td"),
+    ];
+
+    dataCell[0].textContent = airport;
+    dataCell[1].textContent = getCountGamePlayer(player, obj);
+    dataCell[2].textContent = getCountWinGamePlayer(player,obj,);
+    dataCell[3].textContent = getWinRatingPlayers(player, obj);
+    dataCell[4].textContent = getPointRatingPlayer(player, obj);
+
+    dataCell.forEach(function (cell) {
+      dataRow.appendChild(cell);
+    });
+    DOM.playerRating.appendChild(dataRow);
+  });
+}
+
 // players table--------------------------------------------------------
 function createTableRatingPlayers(obj) {
   let players = [];
@@ -78,6 +112,7 @@ function createTableRatingPlayers(obj) {
   players.forEach(function (player) {
     const dataRow = document.createElement("tr");
     dataRow.className = "player_rating_row";
+    dataRow.onclick = function() {createTableRatingPlayer(player, obj); };
     let dataCell = [
       document.createElement("td"),
       document.createElement("td"),
