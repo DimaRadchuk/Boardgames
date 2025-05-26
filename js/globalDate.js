@@ -215,15 +215,31 @@ const gameTurbo = [
     date: "26-01-2025",
     track: "США",
     expansions: [
-      { expansion: "погода"}, 
-      { expansion: "гараж"},
+      { expansion: "Туман"}, 
+      { expansion: "Гараж"},
     ],
     players: [
       { player: "Тупало В.", position: 1, point: 9},
       { player: "Радчук Д.", position: 2, point: 6},
       { player: "Ваврисюк І.", position: 3, point: 4},
-      { player: "Дзих. В.", position: 4, point: 3},
+      { player: "Дзих В.", position: 4, point: 3},
       { player: "Жилич В.", position: 5, point: 2},
+    ],
+  },
+  {
+    date: "25-05-2025",
+    track: "Велика Британія",
+    expansions: [
+      { expansion: "Дощ"}, 
+      { expansion: "Гараж"},
+    ],
+    players: [
+      { player: "Дзих В.", position: 1, point: 9},
+      { player: "Жилич В.", position: 2, point: 6},
+      { player: "Радчук Д.", position: 3, point: 4},
+      { player: "Ваврисюк І.", position: 4, point: 3},
+      { player: "Крутих Б.", position: 5, point: 2},
+      { player: "Богач М.", position: 6, point: 1},
     ],
   },
 ];

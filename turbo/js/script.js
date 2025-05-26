@@ -231,6 +231,9 @@ function createTableListGame(obj) {
         case 5:
           dataGameCell[1].className += "game_list_fifth_place";
           break;
+        case 6:
+          dataGameCell[1].className += "game_list_sixth_place";
+          break;
         default:
           break;
       }
@@ -255,6 +258,8 @@ function createTableListGame(obj) {
       case "США":
         dateGameExpansionTrack.className += "game_list_track_usa";
         break;
+      case "Велика Британія":
+        dateGameExpansionTrack.className += "game_list_track_uk";
         break;
       default:
         break;
@@ -263,12 +268,17 @@ function createTableListGame(obj) {
     
 
     item.expansions.forEach(function (expansion) {
-      if (expansion.expansion == "погода") {
+      if (expansion.expansion == "Туман") {
         const dateGameExpansionWeather = document.createElement("a");
-        dateGameExpansionWeather.className += "game_list_expansions_weather";
+        dateGameExpansionWeather.className += "game_list_expansions_weather_fog";
         dateGameDesc.appendChild(dateGameExpansionWeather);
       };
-      if (expansion.expansion == "гараж") {
+      if (expansion.expansion == "Дощ") {
+        const dateGameExpansionWeather = document.createElement("a");
+        dateGameExpansionWeather.className += "game_list_expansions_weather_rain";
+        dateGameDesc.appendChild(dateGameExpansionWeather);
+      };
+      if (expansion.expansion == "Гараж") {
         const dateGameExpansionGarage = document.createElement("a");
         dateGameExpansionGarage.className += "game_list_expansions_garage";
         dateGameDesc.appendChild(dateGameExpansionGarage);
