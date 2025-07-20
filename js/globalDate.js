@@ -204,7 +204,7 @@ const gameDatePilots = [
     date: "20-07-2025",
     airport: "Куала-Лумпур",
     complexity: "Жовтий",
-    result: "Пепемога",
+    result: "Перемога",
     players: [
       { player: "Радчук О.", pilot: "1-й пілот"},
       { player: "Радчук Д.", pilot: "2-й пілот"},
