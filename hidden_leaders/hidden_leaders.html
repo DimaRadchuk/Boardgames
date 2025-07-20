@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=530, initial-scale=0.7, maximum-scale=0.7">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="text/javascript" src="../js/dom.js" defer></script>
+  <script type="text/javascript" src="../js/globalDate.js" defer></script>
+  <script type="text/javascript" src="js/script.js" defer></script>
+  <script type="text/javascript" src="../js/shortTable.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <title>Настільні ігри</title>
+  <link rel="icon" type="image/x-icon" href="../image/icon_img.png">
+</head>
+
+<body onload="sortTablePlayers(2); sortTablePlayers(3)" class="shortTable">
+  <header>
+    <div class="header_container">
+      <h1>Таємні лідери</h1>
+    </div>
+  </header>
+  <div class="players_rating_container">
+    <h1 class="players_rating_title">Рейтинг гравців</h1>
+    <table class="players_rating_table" id="ratingTablePlayers">
+      <thead class="players_rating_table_thead">
+        <th onclick="sortTablePlayers(0)">Гравці</th>
+        <th onclick="sortTablePlayers(1)">К-сть ігор</th>
+        <th onclick="sortTablePlayers(2)">К-сть перемог</th>
+        <th onclick="sortTablePlayers(3)">Рейтинг перемог</th>
+      </thead>
+      <tbody class="players_rating_table_tbody" id="playerRating"></tbody>
+    </table>
+  </div>
+  <div class="game_list_container" id="gameList">
+  </div>
+  <div class="faction_rating_container">
+    <h1 class="faction_rating_title">Рейтинг фракцій</h1>
+    <table class="faction_rating_table" id="ratingTableFaction">
+      <thead class="faction_rating_table_thead">
+        <th onclick="sortTableFaction(0)">Фракція</th>
+        <th onclick="sortTableFaction(1)">К-сть ігор</th>
+        <th onclick="sortTableFaction(2)">К-сть перемог</th>
+        <th onclick="sortTableFaction(3)">Рейтинг перемог</th>
+      </thead>
+      <tbody class="faction_rating_table_tbody" id="factionRating"></tbody>
+      <tr class="faction_rating_table_tr faction_deads">
+        <td class="faction_rating_table_name">Мертвяки</td>
+      </tr>
+      <tr class="faction_rating_table_tr faction_watermen">
+        <td class="faction_rating_table_name">Водяники</td>
+      </tr>
+      <tr class="faction_rating_table_tr faction_imperialists">
+        <td class="faction_rating_table_name">Імперці</td>
+      </tr>
+      <tr class="faction_rating_table_tr faction_highlanders">
+        <td class="faction_rating_table_name">Горяни</td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    <div class="footer_url_container">
+      <a href="https://web.telegram.org/a/#363608902" target="blank">
+        <img class="footer_url_telegram" src="../image/telegram.png"></a>
+      <a href="https://www.instagram.com" target="blank">
+        <img class="footer_url_instagram" src="../image/instagram.png">
+      </a>
+    </div>
+    <div class="creator_title_containet">
+      <h6 class="creator_title">Created by Dima</h6>
+    </div>
+  </footer>
+</body>
+
+</html>

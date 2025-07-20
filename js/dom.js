@@ -13,4 +13,10 @@ const DOM = {
   turboFactionRating: document.getElementById("factionRating"),
   turboFactionRatingRow: document.getElementById("factionRating"),
   turboGameListAll: document.getElementById("gameList"),
+
+  hiddenLeadersPlayerRating: document.getElementById("playerRating"),
+  hiddenLeadersFactionRating: document.getElementById("factionRating"),
+  hiddenLeadersFactionRatingRow: document.getElementById("factionRating"),
+  hiddenLeadersGameListAll: document.getElementById("gameList"),
+
 };

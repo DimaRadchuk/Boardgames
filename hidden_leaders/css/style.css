@@ -1,0 +1,194 @@
+/* background img */
+body {
+    background-image: url('../image/hidden_leaders.png');
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* header */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+/* player and faction table */
+
+.players_rating_title,
+.faction_rating_title {
+    background: rgba(189, 106, 25, 0.9);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+.players_rating_table,
+.faction_rating_table {
+    background: rgba(189, 106, 25, 0.8);
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+    border: 0.1em solid #000000;
+}
+
+.players_rating_table th,
+.faction_rating_table th {
+    background: rgba(0, 0, 0, 1);
+}
+
+.players_rating_table th,
+.players_rating_table td,
+.faction_rating_table th,
+.faction_rating_table td {
+    padding: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.1em solid #000000;
+}
+
+.players_rating_table_tbody tr:hover {
+    background: rgba(0, 0, 0)
+}
+.game_list_block tr {
+    background: rgba(189, 106, 25, 0.8);
+}
+
+
+/* hidden leaders */
+
+.character_mirad_vinhnannyy {
+    background-image: url('../image/deads.png');
+    background-image: ;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+.character_pavir_voyovnychyy {
+    background: linear-gradient(90deg, #bd6a19e0 75%, #c4301f 76%, #c4c4c4 88%, #3c9934 100%);
+}
+
+.character_sayra_spravedlyva {
+    background: linear-gradient(90deg, #bd6a19e0 75%, #3c9934 76%, #c4c4c4 88%, #4650e8 100%);
+}
+
+.character_enned_nevynna {
+    background: linear-gradient(90deg, #bd6a19e0 75%, #171515 76%, #c4c4c4 88%, #4650e8 100%);
+}
+
+.player_win {
+    background-image: url('../image/crown.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+.player_lose {
+    background-image: url('../image/rip.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em;
+}
+
+/* game list */
+.game_list_container {
+    background: rgba(0, 0, 0, 0.80);
+    height: 19em;
+}
+
+.game_list_container table {
+    border: 0.1em solid #000000;
+    box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
+}
+
+.game_list_container th {
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 0.1em solid #000000;
+}
+
+.game_list_container td {
+    border-bottom: 0.1em solid #000000;
+/*    background: rgba(189, 106, 25, 0.8);*/
+}
+
+.game_list_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #615e59;
+}
+
+.game_list_container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.faction_deads {
+    background: linear-gradient(90deg, #000000f0 40%, #ffffff00 100%);
+}
+
+.faction_watermen {
+    background: linear-gradient(90deg, #1238b5f0 40%, #ffffff00 100%);
+}
+
+.faction_imperialists {
+    background: linear-gradient(90deg, #c4301ff0 40%, #ffffff00 100%);
+}
+
+.faction_deads {
+    background-image: url('../image/deads.png');
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-color: #000000f0;
+}
+
+.faction_deads_simlpe {
+    background-image: url('../image/deads.png');
+    background-position: 30% 50%;;
+    background-repeat: no-repeat;
+    background-size: 1.9em;
+}
+
+.faction_watermen {
+    background-image: url('../image/watermen.png');
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-color: #1238b5f0;
+}
+
+.faction_watermen_simlpe {
+    background-image: url('../image/watermen.png');
+    background-position: 30% 50%;;
+    background-repeat: no-repeat;
+    background-size: 1.9em;
+}
+
+.faction_imperialists {
+    background-image: url('../image/imperialists.png');
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-color: #c4301ff0;
+}
+
+.faction_imperialists_simlpe {
+    background-image: url('../image/imperialists.png');
+    background-position: 30% 50%;;
+    background-repeat: no-repeat;
+    background-size: 1.9em;
+}
+
+.faction_highlanders {
+    background-image: url('../image/highlanders.png');
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-color: #3c9934f0;
+}
+
+.faction_highlanders_simlpe {
+    background-image: url('../image/highlanders.png');
+    background-position: 30% 50%;;
+    background-repeat: no-repeat;
+    background-size: 1.9em;
+}
+
+
+
+
+/* footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+}

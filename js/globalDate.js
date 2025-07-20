@@ -1,5 +1,3 @@
-const airport = ["Монтреаль - Трюдо", "Гітроу", "Ханеда (зелена)", "Ґарденмуен (зелена)"];
-
 const gameDatePilots = [
   {
     date: "19-01-2025",
@@ -171,6 +169,26 @@ const gameDatePilots = [
       { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
+  {
+    date: "10-05-2025",
+    airport: "Кеплавік",
+    complexity: "Жовтий",
+    result: "Перемога",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "10-05-2025",
+    airport: "Вацлав Гавел",
+    complexity: "Жовтий",
+    result: "Перемога",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
+    ],
+  },
 ];
 
 // Війна персня
@@ -187,8 +205,8 @@ const gameDateWarRingCardGame = [
   {
     date: "26-01-2025",
     players: [
-      { player: "Радчук Д.", faction: "Тінь", point: 1},
       { player: "Радчук О.", faction: "Вільні народи", point: 0},
+      { player: "Радчук Д.", faction: "Тінь", point: 1},
     ],
     description: "23 - 14",
   },
@@ -203,12 +221,22 @@ const gameDateWarRingCardGame = [
   {
     date: "16-02-2025",
     players: [
-      { player: "Радчук Д.", faction: "Тінь", point: 1},
       { player: "Радчук О.", faction: "Вільні народи", point: 0},
+      { player: "Радчук Д.", faction: "Тінь", point: 1},
     ],
     description: "20 - 17",
   },
+    {
+    date: "30-04-2025",
+    players: [
+      { player: "Радчук Д.", faction: "Вільні народи", point: 1},
+      { player: "Радчук О.", faction: "Тінь", point: 0},
+    ],
+    description: "22 - 18",
+  },
 ];
+
+// Турбо
 
 const gameTurbo = [
   {
@@ -241,5 +269,29 @@ const gameTurbo = [
       { player: "Крутих Б.", position: 5, point: 2},
       { player: "Богач М.", position: 6, point: 1},
     ],
+  },
+];
+
+// Таємні лідери
+
+const gameHiddenLeadersСharacters = [
+  { character: "Мірад Вигнанний", faction1: "Мертвяки", faction2: "Горяни"},
+  { character: "Еннед Невинна", faction1: "Мертвяки", faction2: "Водяники"},
+  { character: "Сайра Справедлива", faction1: "Імперці", faction2: "Водяники"},
+  { character: "Павір Войовничий", faction1: "Імперці", faction2: "Горяни"},
+]
+
+const gameHiddenLeaders = [
+  {
+    date: "29-06-2025",
+    expansions: [
+    ],
+    players: [
+      { player: "Радчук Д.", character: "Мірад Вигнанний", faction: "Мертвяки Горяни", point: 1},
+      { player: "Ваврисюк І.", character: "Павір Войовничий", faction: "Імперці Горяни", point: 0},
+      { player: "Чопик А.", character: "Сайра Справедлива", faction: "Імперці Водяники", point: 0},
+      { player: "Атенчук С.", character: "Еннед Невинна", faction: "Мертвяки Водяники", point: 0},
+    ],
+    description: "Горяни",
   },
 ];
