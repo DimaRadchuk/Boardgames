@@ -6,8 +6,7 @@
 /* background img */
 body {
     background-image: url('../image/sky_team.png');
-    background-color: rgba(0, 0, 0, 0.2);
-    
+    background-color: rgba(0, 0, 0, 0.2); 
 }
 
 /* header */
@@ -16,30 +15,30 @@ header {
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
 }
 
-/* player and faction table */
+/* player and airport table */
 
 .players_rating_title,
-.faction_rating_title {
+.airport_rating_title {
     background: rgba(227, 227, 227, 0.8);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
 }
 
 .players_rating_table,
-.faction_rating_table {
+.airport_rating_table {
     background: rgba(227, 227, 227, 0.7);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
     border: 0.1em solid #000000;
 }
 
 .players_rating_table th,
-.faction_rating_table th {
+.airport_rating_table th {
     background: rgba(227, 227, 227, 1);
 }
 
 .players_rating_table th,
 .players_rating_table td,
-.faction_rating_table th,
-.faction_rating_table td {
+.airport_rating_table th,
+.airport_rating_table td {
     padding: 0.6em;
     font-weight: bold;
     text-align: center;
@@ -69,16 +68,15 @@ header {
 .complexity_green th {
     background: rgba(151, 189, 126, 1) !important;
 }
-/*(151, 189, 126, 1)*/
 
 .complexity_green tr {
     background: rgba(154, 200, 123, 0.7);
 }
-/*(154, 200, 123, 1)*/
+
 .complexity_yellow th {
     background: rgba(225, 209, 101, 1) !important;
 }
-/*(225, 209, 101, 1)*/
+
 .complexity_yellow tr {
     background: rgba(216, 192, 71, 0.7) !important;
 }

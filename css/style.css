@@ -68,13 +68,15 @@ header {
     border-radius: 3%;
 }
 
-.faction_rating_container {
+.faction_rating_container,
+.airport_rating_container {
     padding: 0 0 5em 0;
     border-radius: 3%;
 }
 
 .players_rating_title,
-.faction_rating_title {
+.faction_rating_title,
+.airport_rating_title {
     width: 10em;
     border-radius: 0.25em;
     text-align: center;
@@ -86,12 +88,14 @@ header {
     margin: 0.25em auto 0.25em auto;
 }
 
-.faction_rating_title {
+.faction_rating_title,
+.airport_rating_title {
     margin: 1.5em auto auto auto;
 }
 
 .players_rating_table,
-.faction_rating_table {
+.faction_rating_table,
+.airport_rating_table {
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
     border: 0.1em solid #000000;
@@ -101,19 +105,23 @@ header {
 }
 
 .players_rating_table th,
-.faction_rating_table th {
+.faction_rating_table th,
+.airport_rating_table th {
     background: rgba(0, 0, 0,);
 }
 
 .players_rating_table th:hover,
-.faction_rating_table th:hover {
+.faction_rating_table th:hover,
+.airport_rating_table th:hover {
     cursor: pointer;
 }
 
 .players_rating_table th,
 .players_rating_table td,
 .faction_rating_table th,
-.faction_rating_table td {
+.faction_rating_table td,
+.airport_rating_table th,
+.airport_rating_table td {
     padding: 0.6em;
     font-weight: bold;
     text-align: center;

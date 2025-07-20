@@ -138,46 +138,30 @@ const tbodyPlayersRating = createTableRatingPlayers(gameDatePilots);
 // ----------------------------------------------------------------------------
 // math function
 
-function getCountGameFaction(name, obj) {
+function getCountGameAirport(name, obj) {
   let gameCount = 0;
   obj.forEach((item) => {
-    item.season.forEach((season) => {
-      if (season.title == selectedSeason) {
-        season.ring.forEach((games) => {
-          games.players.forEach((faction) => {
-            if (faction.faction == name) {
-              gameCount++;
-            }
-          });
-        });
+      if (item.airport == name) {
+        gameCount++;
       }
-    });
   });
   return gameCount;
-}
+  }
 
-function getCountWinGameFaction(name, obj) {
+function getCountWinGameAirport(name, obj) {
   let gameWinCount = 0;
   obj.forEach((item) => {
-    item.season.forEach((season) => {
-      if (season.title == selectedSeason) {
-        season.ring.forEach((games) => {
-          games.players.forEach((faction) => {
-            if (faction.faction == name && faction.points == 1) {
-              gameWinCount++;
-            }
-          });
-        });
-      }
-    });
+    if (item.airport == name && item.result == "Перемога") {
+      gameWinCount++;
+    }
   });
   return gameWinCount;
 }
 
-function getWinRatingFaction(faction, obj) {
+function getWinRatingAirport(faction, obj) {
   let gameRating = 0;
-  let gameWinCount = getCountWinGameFaction(faction, obj);
-  let gameCount = getCountGameFaction(faction, obj);
+  let gameWinCount = getCountWinGameAirport(faction, obj);
+  let gameCount = getCountGameAirport(faction, obj);
   if (gameWinCount != 0) {
     gameRating = ((gameWinCount / gameCount) * 100).toFixed(2);
   }
@@ -185,48 +169,43 @@ function getWinRatingFaction(faction, obj) {
   return gameRating;
 }
 
-// faction table--------------------------------------------------------
+// airport table--------------------------------------------------------
 
-// function createTableRatingFactionRow(obj) {
-//   let selectedSeason = document.getElementById("season").value;
-//   const factionsRow = document.getElementsByClassName(
-//     "faction_rating_table_tr"
-//   );
+function createTableRatingAirportRow(obj) {
+  let airports = [];
 
-//   Array.from(factionsRow).forEach(function (faction, i) {
-//     let dataCellFaction = [
-//       document.createElement("td"),
-//       document.createElement("td"),
-//       document.createElement("td"),
-//     ];
+  obj.forEach((item) => {
+      if (airports.indexOf(item.airport) === -1) {
+        airports.push(item.airport);
+      }
+  });
 
-//     faction_name = document.getElementsByClassName("faction_rating_table_name")[
-//       i
-//     ].textContent;
-//     dataCellFaction[0].textContent = getCountGameFaction(
-//       faction_name,
-//       obj,
-//       selectedSeason
-//     );
-//     dataCellFaction[1].textContent = getCountWinGameFaction(
-//       faction_name,
-//       obj,
-//       selectedSeason
-//     );
-//     dataCellFaction[2].textContent = getWinRatingFaction(
-//       faction_name,
-//       obj,
-//       selectedSeason
-//     );
+  // Create table data rows
+  airports.forEach(function (airport) {
+    const dataRow = document.createElement("tr");
+    dataRow.className = "airport_rating_row";
+    dataRow.onclick = function() {createTableRatingAirportRow(airport, obj); };
+    let dataCell = [
+      document.createElement("td"),
+      document.createElement("td"),
+      document.createElement("td"),
+      document.createElement("td"),
+    ];
 
-//     dataCellFaction.forEach(function (child) {
-//       child.className = "faction_rating_row";
-//       faction.appendChild(child);
-//     });
-//   });
-// }
+    dataCell[0].textContent = airport;
+    dataCell[1].textContent = getCountGameAirport(airport, obj);
+    dataCell[2].textContent = getCountWinGameAirport(airport,obj,);
+    dataCell[3].textContent = getWinRatingAirport(airport, obj);
 
-// const tbodyFactionRatingRow = createTableRatingFactionRow(gameDatePilots);
+    dataCell.forEach(function (cell) {
+      dataRow.appendChild(cell);
+    });
+    DOM.airportRating.appendChild(dataRow);
+  });
+}
+
+
+const tbodyFactionAirportRow = createTableRatingAirportRow(gameDatePilots);
 
 // game list --------------------------------------------------------
 
