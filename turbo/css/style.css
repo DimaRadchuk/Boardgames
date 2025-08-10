@@ -29,6 +29,7 @@ header {
     background: rgba(246, 169, 58, 0.7);
     box-shadow: 0.2em 0.2em 0.2em 0.05em rgba(0, 0, 0, 0.8);
     border: 0.1em solid #000000;
+    width: 31em;
 }
 
 .players_rating_table th,
