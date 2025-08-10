@@ -190,7 +190,7 @@ const gameDatePilots = [
     ],
   },
   {
-    date: "20-07-2025",
+    date: "21-07-2025",
     airport: "Куала-Лумпур",
     complexity: "Жовтий",
     result: "Поразка",
@@ -201,7 +201,7 @@ const gameDatePilots = [
   },
   
   {
-    date: "20-07-2025",
+    date: "21-07-2025",
     airport: "Куала-Лумпур",
     complexity: "Жовтий",
     result: "Перемога",
@@ -289,6 +289,21 @@ const gameTurbo = [
       { player: "Ваврисюк І.", position: 4, point: 3},
       { player: "Крутих Б.", position: 5, point: 2},
       { player: "Богач М.", position: 6, point: 1},
+    ],
+  },
+  {
+    date: "10-08-2025",
+    track: "Франція",
+    expansions: [
+      { expansion: "Дощ"}, 
+      { expansion: "Гараж"},
+    ],
+    players: [
+      { player: "Радчук Д.", position: 1, point: 9},
+      { player: "Базилевський Д.", position: 2, point: 6},
+      { player: "Дзих В.", position: 3, point: 4},
+      { player: "Чопик А.", position: 4, point: 3},
+      { player: "Петровський Ю.", position: 5, point: 2},
     ],
   },
 ];

@@ -29,12 +29,9 @@ function getWinRatingPlayers(player, obj, selectedSeason) {
   let gamePointCount = getCountPointGamePlayer(player, obj);
   let gameCount = getCountGamePlayer(player, obj);
   if (gamePointCount != 0 && gameCount > 2) {
-    gameRating = ((gamePointCount / gameCount) * 100).toFixed(2);
-    gameRating += "%";
+    gameRating = (gamePointCount / gameCount).toFixed(2);
   } else if (gameCount < 3) {
     gameRating = "-";
-  } else {
-    gameRating += "%";
   }
 
   return gameRating;
@@ -260,6 +257,9 @@ function createTableListGame(obj) {
         break;
       case "Велика Британія":
         dateGameExpansionTrack.className += "game_list_track_uk";
+        break;
+      case "Франція":
+        dateGameExpansionTrack.className += "game_list_track_france";
         break;
       default:
         break;

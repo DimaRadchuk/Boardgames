@@ -141,6 +141,14 @@ header {
     width: 3em;
 }
 
+.game_list_track_france {
+    background-image: url('../image/france.png');
+    background-position: left;
+    padding: 0 2em 0 0;
+    background-size: 3em;
+    width: 3em;
+}
+
 .game_list_expansions_weather_fog,
 .game_list_expansions_weather_rain,
 .game_list_expansions_garage{
