@@ -49,11 +49,16 @@ function getPointRatingPlayer(name, obj) {
         gamePoint = gamePoint + 1;
       } else if (player.player == name && item.result == "Перемога" && item.complexity == "Жовтий") {
         gamePoint = gamePoint + 2;
-      }
+      } else if (player.player == name && item.result == "Перемога" && item.complexity == "Червоний") {
+        gamePoint = gamePoint + 3;
+      } 
       if (player.player == name && item.result == "Поразка" && item.complexity == "Зелений") {
         gamePoint = gamePoint - 1;
       } else if (player.player == name && item.result == "Поразка" && item.complexity == "Жовтий") {
         gamePoint = gamePoint - 2;
+      }
+      else if (player.player == name && item.result == "Поразка" && item.complexity == "Червоний") {
+        gamePoint = gamePoint - 3;
       }
 
     });
@@ -138,30 +143,30 @@ const tbodyPlayersRating = createTableRatingPlayers(gameDatePilots);
 // ----------------------------------------------------------------------------
 // math function
 
-function getCountGameAirport(name, obj) {
+function getCountGameAirport(airport, obj) {
   let gameCount = 0;
   obj.forEach((item) => {
-      if (item.airport == name) {
+      if (item.airport == airport.name && item.complexity == airport.complexity) {
         gameCount++;
       }
   });
   return gameCount;
   }
 
-function getCountWinGameAirport(name, obj) {
+function getCountWinGameAirport(airport, obj) {
   let gameWinCount = 0;
   obj.forEach((item) => {
-    if (item.airport == name && item.result == "Перемога") {
+    if (item.airport == airport.name && item.result == "Перемога" && item.complexity == airport.complexity) {
       gameWinCount++;
     }
   });
   return gameWinCount;
 }
 
-function getWinRatingAirport(faction, obj) {
+function getWinRatingAirport(name, obj) {
   let gameRating = 0;
-  let gameWinCount = getCountWinGameAirport(faction, obj);
-  let gameCount = getCountGameAirport(faction, obj);
+  let gameWinCount = getCountWinGameAirport(name, obj);
+  let gameCount = getCountGameAirport(name, obj);
   if (gameWinCount != 0) {
     gameRating = ((gameWinCount / gameCount) * 100).toFixed(2);
   }
@@ -172,12 +177,17 @@ function getWinRatingAirport(faction, obj) {
 // airport table--------------------------------------------------------
 
 function createTableRatingAirportRow(obj) {
-  let airports = [];
-
-  obj.forEach((item) => {
-      if (airports.indexOf(item.airport) === -1) {
-        airports.push(item.airport);
-      }
+  const  airports =  new Map();
+  
+obj.forEach((item) => {
+    const key = `${item.airport}__${item.complexity}`;
+    
+    if (!airports.has(key)) {
+      airports.set(key, {
+        name: item.airport,
+        complexity: item.complexity
+      });
+    }
   });
 
   // Create table data rows
@@ -190,15 +200,27 @@ function createTableRatingAirportRow(obj) {
       document.createElement("td"),
       document.createElement("td"),
       document.createElement("td"),
+      document.createElement("td"),
     ];
 
-    dataCell[0].textContent = airport;
-    dataCell[1].textContent = getCountGameAirport(airport, obj);
-    dataCell[2].textContent = getCountWinGameAirport(airport,obj,);
-    dataCell[3].textContent = getWinRatingAirport(airport, obj);
+    dataCell[0].textContent = airport.name;
+    dataCell[1].textContent = airport.complexity;
+    dataCell[2].textContent = getCountGameAirport(airport, obj);
+    dataCell[3].textContent = getCountWinGameAirport(airport,obj,);
+    dataCell[4].textContent = getWinRatingAirport(airport, obj);
+
+    const complexityClassMap = {
+      "Зелений": "complexity_green",
+      "Жовтий": "complexity_yellow",
+      "Червоний": "complexity_red",
+      "Чорний": "complexity_black",
+    };
+
+    const className = complexityClassMap[airport.complexity];
 
     dataCell.forEach(function (cell) {
       dataRow.appendChild(cell);
+      dataRow.classList.add(className);
     });
     DOM.airportRating.appendChild(dataRow);
   });

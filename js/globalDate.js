@@ -199,7 +199,6 @@ const gameDatePilots = [
       { player: "Радчук Д.", pilot: "2-й пілот"},
     ],
   },
-  
   {
     date: "21-07-2025",
     airport: "Куала-Лумпур",
@@ -208,6 +207,36 @@ const gameDatePilots = [
     players: [
       { player: "Радчук О.", pilot: "1-й пілот"},
       { player: "Радчук Д.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "28-12-2025",
+    airport: "Гарстфілд-Джексон",
+    complexity: "Жовтий",
+    result: "Поразка",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "28-12-2025",
+    airport: "Гарстфілд-Джексон",
+    complexity: "Жовтий",
+    result: "Перемога",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
+    ],
+  },
+  {
+    date: "28-12-2025",
+    airport: "Паро",
+    complexity: "Червоний",
+    result: "Поразка",
+    players: [
+      { player: "Радчук Д.", pilot: "1-й пілот"},
+      { player: "Радчук О.", pilot: "2-й пілот"},
     ],
   },
 ];
