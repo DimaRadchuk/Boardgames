@@ -296,7 +296,7 @@ const gameDateWarRingCardGame = [
     date: "27-04-2026",
     players: [
       { player: "Дідич А.", faction: "Вільні народи", point: 0},
-      { player: "Радчук О.", faction: "Тінь", point: 1},
+      { player: "Радчук Д.", faction: "Тінь", point: 1},
     ],
     description: "19 - 20",
   },
